@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tibep.proiectlicenta.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/nav_shoppingcart"
+        android:name="com.tibep.proiectlicenta.ui.shoppingcart.ShoppingCartFragment"
+        android:label="@string/menu_shopping_cart"
+        tools:layout="@layout/fragment_shoppingcart" >
+        <action
+            android:id="@+id/action_nav_shoppingcart_to_nav_saveditems"
+            app:destination="@id/nav_saveditems"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_saveditems"
+        android:name="com.tibep.proiectlicenta.ui.saveditems.SavedItemsFragment"
+        android:label="@string/menu_saveditems"
+        tools:layout="@layout/fragment_saveditems">
+        <action
+            android:id="@+id/action_nav_saveditems_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_upload"
+        android:name="com.tibep.proiectlicenta.ui.upload.UploadFragment"
+        android:label="@string/menu_upload"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.tibep.proiectlicenta.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+</navigation>

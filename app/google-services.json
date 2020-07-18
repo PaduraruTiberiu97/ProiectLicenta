@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "937486512581",
+    "firebase_url": "https://proiectlicenta-aef90.firebaseio.com",
+    "project_id": "proiectlicenta-aef90",
+    "storage_bucket": "proiectlicenta-aef90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937486512581:android:72f039a5b9a6f05e845bac",
+        "android_client_info": {
+          "package_name": "com.tibep.proiectlicenta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937486512581-m15e4kl88n8l5967jg48jf3naho9ipdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tibep.proiectlicenta",
+            "certificate_hash": "9c4008276ea4fbfce5679b28fbadcede89f0af7c"
+          }
+        },
+        {
+          "client_id": "937486512581-k5tjpp3j2gfunrjs3uegesburdqiu8fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI6ySzjFKtCMzJ0KFHJLC120CCOW3igqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937486512581-k5tjpp3j2gfunrjs3uegesburdqiu8fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

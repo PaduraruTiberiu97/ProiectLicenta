@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected, use orange star -->
+    <item android:drawable="@drawable/heart_checked" android:state_checked="true" />
+    <!-- When not selected, use grey star-->
+    <item android:drawable="@drawable/heart_unchecked" android:state_checked="false" />
+
+</selector>

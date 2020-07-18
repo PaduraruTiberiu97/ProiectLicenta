@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Virtual TryOn</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Virtual TryOn</string>
+    <string name="nav_header_greet">Hey,Nume.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Delogare</string>
+
+    <string name="menu_home">Acasa</string>
+    <string name="menu_shopping_cart">Cos de cumparaturi</string>
+    <string name="menu_saveditems">Produse salvate</string>
+    <string name="menu_settings">Setari</string>
+    <string name="menu_darkmode">Dark Mode</string>
+    <string name="menu_upload">Imagini</string>
+    <string name="menu_account">Cont de utilizator</string>
+    <string name="activity_upload">Alegeti Imaginea</string>
+</resources>

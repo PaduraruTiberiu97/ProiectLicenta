@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/img_chooseImageToUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:src="@drawable/addimage"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/edt_txt_nameImageToUpload"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:padding="10dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Introduceti o descriere"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_upload" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#DD7426"
+        android:text="Incarcati"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_txt_nameImageToUpload" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_upload"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="403dp"
+        android:layout_height="9dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_chooseImageToUpload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

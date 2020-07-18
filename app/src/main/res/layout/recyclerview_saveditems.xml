@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_savedItems"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="14dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginBottom="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#92FFD580"
+        android:orientation="vertical">
+
+        <!--       <TextView
+                   android:id="@+id/txt_noItemsInSavedList"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Nu exista niciun produs in lista de favorite!"
+                   android:textColor="@android:color/background_dark"
+                   android:textSize="16sp"
+                   android:visibility="gone"
+                   app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent" />
+
+               <Button
+                   android:id="@+id/btn_noItems"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Adaugati acum"
+                   android:visibility="gone"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/txt_noItemsInSavedList" />-->
+
+        <ImageView
+            android:id="@+id/img_savedItem_image"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_savedItem_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Item name"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/img_savedItem_image" />
+
+        <TextView
+            android:id="@+id/txt_savedItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:text="$ price"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/img_savedItem_image"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <ImageButton
+            android:id="@+id/btn_savedItem_try"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/ic_menu_camera"
+            android:text="Try it"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <ImageButton
+            android:id="@+id/btn_savedItem_delete"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_delete"
+            android:contentDescription="@string/menu_home"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="@+id/btn_savedItem_try"
+            app:layout_constraintStart_toStartOf="@+id/btn_savedItem_try"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

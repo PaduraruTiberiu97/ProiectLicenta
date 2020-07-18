@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.tibep.proiectlicenta"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        def room_version = "2.2.5"
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
+}
+
+dependencies {
+    def room_version = "2.2.5"
+    def lifecycle_version = "2.2.0"
+    def arch_version = "2.1.0"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+
+    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.15.0"
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+}
+
+
+sceneform.asset('sampledata/glasses1.obj',
+        'default',
+        'sampledata/glasses1.sfa',
+        'src/main/assets/glasses1')
+
+sceneform.asset('sampledata/glasses3.obj',
+        'default',
+        'sampledata/glasses3.sfa',
+        'src/main/assets/glasses3')
+
+sceneform.asset('sampledata/glasses4.obj',
+        'default',
+        'sampledata/glasses4.sfa',
+        'src/main/assets/glasses4')
+
+sceneform.asset('sampledata/glasses5.gltf',
+        'default',
+        'sampledata/glasses5.sfa',
+        'src/main/assets/glasses5')
+
+sceneform.asset('sampledata/glasses6.gltf',
+        'default',
+        'sampledata/glasses6.sfa',
+        'src/main/assets/glasses6')
+
+sceneform.asset('sampledata/glasses7.gltf',
+        'default',
+        'sampledata/glasses7.sfa',
+        'src/main/assets/glasses7')
+
+sceneform.asset('sampledata/glasses8.gltf',
+        'default',
+        'sampledata/glasses8.sfa',
+        'src/main/assets/glasses8')
+
+sceneform.asset('sampledata/glasses9.gltf',
+        'default',
+        'sampledata/glasses9.sfa',
+        'src/main/assets/glasses9')
+
+sceneform.asset('sampledata/glasses10.gltf',
+        'default',
+        'sampledata/glasses10.sfa',
+        'src/main/assets/glasses10')
